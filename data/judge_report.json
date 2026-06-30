@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "total_cases": 15,
+    "duration_seconds": 1.63,
+    "judge_calls": 30,
+    "total_tokens": 6714,
+    "prompt_tokens": 5814,
+    "completion_tokens": 900,
+    "position_flip_rate_before_mitigation": 1.0
+  },
+  "win_rates": {
+    "before_mitigation": {
+      "config_a_win_rate": 1.0,
+      "config_b_win_rate": 0.0,
+      "tie_rate": 0.0
+    },
+    "after_mitigation": {
+      "config_a_win_rate": 0.0,
+      "config_b_win_rate": 0.0,
+      "tie_rate": 1.0
+    }
+  },
+  "declared_winner": "TIE"
+}

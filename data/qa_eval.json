@@ -1,0 +1,170 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the default replication factor for AetherDB?",
+    "gold_answer": "The default replication factor is 3.",
+    "gold_file": "system_overview.md",
+    "keywords": ["replication factor", "3"]
+  },
+  {
+    "id": "q2",
+    "question": "What consensus protocol does AetherDB use?",
+    "gold_answer": "AetherDB uses the Raft consensus protocol.",
+    "gold_file": "system_overview.md",
+    "keywords": ["raft", "consensus"]
+  },
+  {
+    "id": "q3",
+    "question": "Which port is used for Raft Inter-Node Consensus?",
+    "gold_answer": "Port 9090 is used for Raft consensus node-to-node communication.",
+    "gold_file": "system_overview.md",
+    "keywords": ["9090", "raft"]
+  },
+  {
+    "id": "q4",
+    "question": "What is AetherDB's default client REST API port?",
+    "gold_answer": "The default client REST API port is 8080.",
+    "gold_file": "system_overview.md",
+    "keywords": ["8080", "rest"]
+  },
+  {
+    "id": "q5",
+    "question": "What gossip membership port does AetherDB use?",
+    "gold_answer": "The gossip membership port is 7070.",
+    "gold_file": "system_overview.md",
+    "keywords": ["7070", "gossip"]
+  },
+  {
+    "id": "q6",
+    "question": "What is the maximum value size supported by AetherDB?",
+    "gold_answer": "The maximum value size is 50 MB.",
+    "gold_file": "system_overview.md",
+    "keywords": ["50 mb", "value"]
+  },
+  {
+    "id": "q7",
+    "question": "What is the maximum key size in AetherDB?",
+    "gold_answer": "The maximum key size is 2 KB.",
+    "gold_file": "system_overview.md",
+    "keywords": ["2 kb", "key"]
+  },
+  {
+    "id": "q8",
+    "question": "What is the storage engine used by AetherDB under the hood?",
+    "gold_answer": "It uses a Log-Structured Merge-tree (LSM-tree) storage engine.",
+    "gold_file": "system_overview.md",
+    "keywords": ["lsm", "merge", "tree"]
+  },
+  {
+    "id": "q9",
+    "question": "What happens when the MemTable reaches 64MB in size?",
+    "gold_answer": "It is flushed to disk as an immutable SSTable (Sorted String Table).",
+    "gold_file": "system_overview.md",
+    "keywords": ["flush", "sstable", "64mb"]
+  },
+  {
+    "id": "q10",
+    "question": "What is the minimum RAM required for AetherDB nodes?",
+    "gold_answer": "The minimum RAM required is 8 GB per node.",
+    "gold_file": "operations_manual.md",
+    "keywords": ["8 gb", "ram"]
+  },
+  {
+    "id": "q11",
+    "question": "What HTTP header is required for REST API write/read requests?",
+    "gold_answer": "The HTTP header X-Aether-Token is required.",
+    "gold_file": "api_spec.html",
+    "keywords": ["x-aether-token"]
+  },
+  {
+    "id": "q12",
+    "question": "Does accessing the cluster health API endpoint require authentication?",
+    "gold_answer": "No, accessing the health endpoint /api/v1/health does not require authentication.",
+    "gold_file": "api_spec.html",
+    "keywords": ["no", "health", "authentication"]
+  },
+  {
+    "id": "q13",
+    "question": "How often should authentication tokens be rotated?",
+    "gold_answer": "Tokens should be rotated every 30 days.",
+    "gold_file": "security_policy.pdf",
+    "keywords": ["30 days", "rotated"]
+  },
+  {
+    "id": "q14",
+    "question": "What consistency level options are supported in AetherDB's write API?",
+    "gold_answer": "It supports consistency levels of 'one', 'quorum', and 'all'.",
+    "gold_file": "api_spec.html",
+    "keywords": ["one", "quorum", "all"]
+  },
+  {
+    "id": "q15",
+    "question": "What disk storage type is recommended to avoid latency spikes during compactions?",
+    "gold_answer": "High-performance NVMe SSDs are highly recommended.",
+    "gold_file": "operations_manual.md",
+    "keywords": ["nvme", "ssd"]
+  },
+  {
+    "id": "q16",
+    "question": "How do you scale out a cluster by adding a node?",
+    "gold_answer": "Set the seed_nodes in aether.conf to point to the active seed nodes and start the node service.",
+    "gold_file": "operations_manual.md",
+    "keywords": ["seed_nodes", "aether.conf"]
+  },
+  {
+    "id": "q17",
+    "question": "Are backup operations online or offline in AetherDB?",
+    "gold_answer": "Backup operations are fully online and do not block write operations.",
+    "gold_file": "operations_manual.md",
+    "keywords": ["online", "backup"]
+  },
+  {
+    "id": "q18",
+    "question": "Where are backups stored by running the admin backup command?",
+    "gold_answer": "They are copied to the path specified by the --destination flag, e.g. /mnt/backup.",
+    "gold_file": "operations_manual.md",
+    "keywords": ["/mnt/backup", "--destination"]
+  },
+  {
+    "id": "q19",
+    "question": "What encryption algorithm is supported for data at rest in AetherDB?",
+    "gold_answer": "AES-256 block encryption is supported.",
+    "gold_file": "security_policy.pdf",
+    "keywords": ["aes-256", "encryption"]
+  },
+  {
+    "id": "q20",
+    "question": "Does AetherDB support external Key Management Services?",
+    "gold_answer": "Yes, AetherDB supports managing encryption keys using an external Key Management Service (KMS).",
+    "gold_file": "security_policy.pdf",
+    "keywords": ["kms", "key management"]
+  },
+  {
+    "id": "q21",
+    "question": "What is the minimum CPU core requirement for AetherDB?",
+    "gold_answer": "The minimum requirement is 4 Cores.",
+    "gold_file": "operations_manual.md",
+    "keywords": ["4 cores", "cpu"]
+  },
+  {
+    "id": "q22",
+    "question": "Which endpoint is used to write key-value pairs?",
+    "gold_answer": "The endpoint is POST /api/v1/write.",
+    "gold_file": "api_spec.html",
+    "keywords": ["post", "/api/v1/write"]
+  },
+  {
+    "id": "q23",
+    "question": "What port conflict troubleshooting step is recommended if port 8080 is in use?",
+    "gold_answer": "You can edit the config file to change the http_port parameter.",
+    "gold_file": "operations_manual.md",
+    "keywords": ["change", "http_port"]
+  },
+  {
+    "id": "q24",
+    "question": "What is the gossip port used for?",
+    "gold_answer": "Port 7070 is used for the gossip membership protocol.",
+    "gold_file": "system_overview.md",
+    "keywords": ["7070", "gossip"]
+  }
+]

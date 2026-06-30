@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Databases & local data (reconstructable via scripts)
+data/lancedb/
+.lancedb/
+
+# Environment secrets (do not commit API keys)
+.env
+
+# OS specific files
+.DS_Store

@@ -1,0 +1,720 @@
+{
+  "metrics": {
+    "retrieval": {
+      "recall_at_k": 0.875,
+      "mrr": 0.7222222222222222,
+      "ndcg_at_k": 1.1298359631853545,
+      "context_precision": 0.6643518518518517
+    },
+    "generation": {
+      "faithfulness": 2.891666666666666,
+      "relevance": 1.8,
+      "em": 0.0,
+      "f1": 0.11347626370865883
+    },
+    "latency": {
+      "retrieval_p50": 2.225160598754883,
+      "retrieval_p95": 2.9602289199829097,
+      "e2e_p50": 0.02193450927734375,
+      "e2e_p95": 0.02874135971069336
+    }
+  },
+  "detailed_runs": [
+    {
+      "id": "q1",
+      "question": "What is the default replication factor for AetherDB?",
+      "gold_file": "system_overview.md",
+      "gold_answer": "The default replication factor is 3.",
+      "retrieved_files": [
+        "operations_manual.md",
+        "system_overview.md",
+        "operations_manual.md",
+        "api_spec.html"
+      ],
+      "retrieved_scores": [
+        0.3399500846862793,
+        0.33596599102020264,
+        0.19364923238754272,
+        0.1813691258430481
+      ],
+      "generated_answer": "Based on operations_manual.md, we found relevant information [1]. The context indicates that the key topics include: '## Troubleshooting Port Conflicts If port **8080** is already in...'",
+      "hit": true,
+      "rank": 2,
+      "ndcg": 0.6309297535714575,
+      "context_precision": 0.5,
+      "em": 0.0,
+      "f1": 0.12903225806451613,
+      "faithfulness": 3.3,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 31.589984893798828,
+      "e2e_latency_ms": 0.03409385681152344
+    },
+    {
+      "id": "q2",
+      "question": "What consensus protocol does AetherDB use?",
+      "gold_file": "system_overview.md",
+      "gold_answer": "AetherDB uses the Raft consensus protocol.",
+      "retrieved_files": [
+        "system_overview.md",
+        "security_policy.pdf",
+        "operations_manual.md",
+        "api_spec.html"
+      ],
+      "retrieved_scores": [
+        0.21160370111465454,
+        0.16090363264083862,
+        0.14237374067306519,
+        0.12565624713897705
+      ],
+      "generated_answer": "Based on system_overview.md, we found relevant information [1]. The context indicates that the key topics include: '## Replication & Consensus - **Default Replication Factor**: The default...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "em": 0.0,
+      "f1": 0.13793103448275862,
+      "faithfulness": 2.7,
+      "relevance": 2.0,
+      "retrieval_latency_ms": 2.8090476989746094,
+      "e2e_latency_ms": 0.028133392333984375
+    },
+    {
+      "id": "q3",
+      "question": "Which port is used for Raft Inter-Node Consensus?",
+      "gold_file": "system_overview.md",
+      "gold_answer": "Port 9090 is used for Raft consensus node-to-node communication.",
+      "retrieved_files": [
+        "system_overview.md",
+        "operations_manual.md",
+        "security_policy.pdf",
+        "system_overview.md"
+      ],
+      "retrieved_scores": [
+        0.2062842845916748,
+        0.19425725936889648,
+        0.13934653997421265,
+        0.12216949462890625
+      ],
+      "generated_answer": "Based on system_overview.md, we found relevant information [1]. The context indicates that the key topics include: '# AetherDB: High-Performance Distributed Storage System ## System Overview AetherDB...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.4306765580733931,
+      "context_precision": 0.75,
+      "em": 0.0,
+      "f1": 0.0,
+      "faithfulness": 2.9,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 2.233266830444336,
+      "e2e_latency_ms": 0.02193450927734375
+    },
+    {
+      "id": "q4",
+      "question": "What is AetherDB's default client REST API port?",
+      "gold_file": "system_overview.md",
+      "gold_answer": "The default client REST API port is 8080.",
+      "retrieved_files": [
+        "api_spec.html",
+        "system_overview.md",
+        "security_policy.pdf",
+        "operations_manual.md"
+      ],
+      "retrieved_scores": [
+        0.25391680002212524,
+        0.1832541823387146,
+        0.07216882705688477,
+        0.06454980373382568
+      ],
+      "generated_answer": "Based on api_spec.html, we found relevant information [1]. The context indicates that the key topics include: 'AetherDB REST API Specification AetherDB HTTP REST API Reference This...'",
+      "hit": true,
+      "rank": 2,
+      "ndcg": 0.6309297535714575,
+      "context_precision": 0.5,
+      "em": 0.0,
+      "f1": 0.1764705882352941,
+      "faithfulness": 3.2,
+      "relevance": 2.3,
+      "retrieval_latency_ms": 2.5720596313476562,
+      "e2e_latency_ms": 0.023603439331054688
+    },
+    {
+      "id": "q5",
+      "question": "What gossip membership port does AetherDB use?",
+      "gold_file": "system_overview.md",
+      "gold_answer": "The gossip membership port is 7070.",
+      "retrieved_files": [
+        "security_policy.pdf",
+        "system_overview.md",
+        "operations_manual.md",
+        "operations_manual.md"
+      ],
+      "retrieved_scores": [
+        0.18620961904525757,
+        0.16539525985717773,
+        0.15575212240219116,
+        0.13181227445602417
+      ],
+      "generated_answer": "I am sorry, but I cannot find relevant information in the provided document corpus to answer your question.",
+      "hit": true,
+      "rank": 2,
+      "ndcg": 0.6309297535714575,
+      "context_precision": 0.5,
+      "em": 0.0,
+      "f1": 0.08333333333333333,
+      "faithfulness": 1.9,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 2.0537376403808594,
+      "e2e_latency_ms": 0.0030994415283203125
+    },
+    {
+      "id": "q6",
+      "question": "What is the maximum value size supported by AetherDB?",
+      "gold_file": "system_overview.md",
+      "gold_answer": "The maximum value size is 50 MB.",
+      "retrieved_files": [
+        "operations_manual.md",
+        "system_overview.md",
+        "operations_manual.md",
+        "system_overview.md"
+      ],
+      "retrieved_scores": [
+        0.2747211456298828,
+        0.22222214937210083,
+        0.18257427215576172,
+        0.14397799968719482
+      ],
+      "generated_answer": "Based on operations_manual.md, we found relevant information [1]. The context indicates that the key topics include: '## Troubleshooting Port Conflicts If port **8080** is already in...'",
+      "hit": true,
+      "rank": 2,
+      "ndcg": 1.0616063116448506,
+      "context_precision": 0.5,
+      "em": 0.0,
+      "f1": 0.125,
+      "faithfulness": 2.9,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 1.8248558044433594,
+      "e2e_latency_ms": 0.02193450927734375
+    },
+    {
+      "id": "q7",
+      "question": "What is the maximum key size in AetherDB?",
+      "gold_file": "system_overview.md",
+      "gold_answer": "The maximum key size is 2 KB.",
+      "retrieved_files": [
+        "operations_manual.md",
+        "system_overview.md",
+        "operations_manual.md",
+        "system_overview.md"
+      ],
+      "retrieved_scores": [
+        0.3399501442909241,
+        0.23570221662521362,
+        0.1936492919921875,
+        0.18325430154800415
+      ],
+      "generated_answer": "Based on operations_manual.md, we found relevant information [1]. The context indicates that the key topics include: '## Troubleshooting Port Conflicts If port **8080** is already in...'",
+      "hit": true,
+      "rank": 2,
+      "ndcg": 1.0616063116448506,
+      "context_precision": 0.5,
+      "em": 0.0,
+      "f1": 0.1875,
+      "faithfulness": 2.9,
+      "relevance": 2.0,
+      "retrieval_latency_ms": 1.9240379333496094,
+      "e2e_latency_ms": 0.02193450927734375
+    },
+    {
+      "id": "q8",
+      "question": "What is the storage engine used by AetherDB under the hood?",
+      "gold_file": "system_overview.md",
+      "gold_answer": "It uses a Log-Structured Merge-tree (LSM-tree) storage engine.",
+      "retrieved_files": [
+        "system_overview.md",
+        "operations_manual.md",
+        "operations_manual.md",
+        "system_overview.md"
+      ],
+      "retrieved_scores": [
+        0.34324753284454346,
+        0.30477577447891235,
+        0.3038219213485718,
+        0.26355332136154175
+      ],
+      "generated_answer": "Based on system_overview.md, we found relevant information [1]. The context indicates that the key topics include: '## Architecture & Storage Engine Under the hood, AetherDB relies...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.4306765580733931,
+      "context_precision": 0.75,
+      "em": 0.0,
+      "f1": 0.125,
+      "faithfulness": 2.6,
+      "relevance": 3.9,
+      "retrieval_latency_ms": 2.480030059814453,
+      "e2e_latency_ms": 0.025987625122070312
+    },
+    {
+      "id": "q9",
+      "question": "What happens when the MemTable reaches 64MB in size?",
+      "gold_file": "system_overview.md",
+      "gold_answer": "It is flushed to disk as an immutable SSTable (Sorted String Table).",
+      "retrieved_files": [
+        "system_overview.md",
+        "operations_manual.md",
+        "operations_manual.md",
+        "api_spec.html"
+      ],
+      "retrieved_scores": [
+        0.3000234365463257,
+        0.22893434762954712,
+        0.18257421255111694,
+        0.1709963083267212
+      ],
+      "generated_answer": "Based on system_overview.md, we found relevant information [1]. The context indicates that the key topics include: '## Architecture & Storage Engine Under the hood, AetherDB relies...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "em": 0.0,
+      "f1": 0.0,
+      "faithfulness": 3.2,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 2.986907958984375,
+      "e2e_latency_ms": 0.026941299438476562
+    },
+    {
+      "id": "q10",
+      "question": "What is the minimum RAM required for AetherDB nodes?",
+      "gold_file": "operations_manual.md",
+      "gold_answer": "The minimum RAM required is 8 GB per node.",
+      "retrieved_files": [
+        "system_overview.md",
+        "system_overview.md",
+        "operations_manual.md",
+        "operations_manual.md"
+      ],
+      "retrieved_scores": [
+        0.24310827255249023,
+        0.23036491870880127,
+        0.22893428802490234,
+        0.21300315856933594
+      ],
+      "generated_answer": "Based on system_overview.md, we found relevant information [1]. The context indicates that the key topics include: '# AetherDB: High-Performance Distributed Storage System ## System Overview AetherDB...'",
+      "hit": true,
+      "rank": 3,
+      "ndcg": 0.9306765580733931,
+      "context_precision": 0.41666666666666663,
+      "em": 0.0,
+      "f1": 0.06060606060606061,
+      "faithfulness": 2.5,
+      "relevance": 1.8,
+      "retrieval_latency_ms": 2.761363983154297,
+      "e2e_latency_ms": 0.028848648071289062
+    },
+    {
+      "id": "q11",
+      "question": "What HTTP header is required for REST API write/read requests?",
+      "gold_file": "api_spec.html",
+      "gold_answer": "The HTTP header X-Aether-Token is required.",
+      "retrieved_files": [
+        "api_spec.html",
+        "system_overview.md",
+        "system_overview.md",
+        "operations_manual.md"
+      ],
+      "retrieved_scores": [
+        0.35688722133636475,
+        0.13837963342666626,
+        0.1365896463394165,
+        0.1303117275238037
+      ],
+      "generated_answer": "Based on api_spec.html, we found relevant information [1]. The context indicates that the key topics include: 'AetherDB REST API Specification AetherDB HTTP REST API Reference This...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "em": 0.0,
+      "f1": 0.125,
+      "faithfulness": 3.2,
+      "relevance": 2.7,
+      "retrieval_latency_ms": 2.441883087158203,
+      "e2e_latency_ms": 0.023126602172851562
+    },
+    {
+      "id": "q12",
+      "question": "Does accessing the cluster health API endpoint require authentication?",
+      "gold_file": "api_spec.html",
+      "gold_answer": "No, accessing the health endpoint /api/v1/health does not require authentication.",
+      "retrieved_files": [
+        "api_spec.html",
+        "api_spec.html",
+        "operations_manual.md",
+        "api_spec.html"
+      ],
+      "retrieved_scores": [
+        0.48507124185562134,
+        0.23939496278762817,
+        0.20412415266036987,
+        0.18650078773498535
+      ],
+      "generated_answer": "Based on api_spec.html, we found relevant information [1]. The context indicates that the key topics include: 'Endpoint: GET /api/v1/health Returns health metrics of the cluster. Accessing...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 2.0616063116448506,
+      "context_precision": 0.9166666666666666,
+      "em": 0.0,
+      "f1": 0.2777777777777778,
+      "faithfulness": 3.2,
+      "relevance": 3.3,
+      "retrieval_latency_ms": 2.2170543670654297,
+      "e2e_latency_ms": 0.0209808349609375
+    },
+    {
+      "id": "q13",
+      "question": "How often should authentication tokens be rotated?",
+      "gold_file": "security_policy.pdf",
+      "gold_answer": "Tokens should be rotated every 30 days.",
+      "retrieved_files": [
+        "security_policy.pdf",
+        "security_policy.pdf",
+        "api_spec.html",
+        "api_spec.html"
+      ],
+      "retrieved_scores": [
+        0.23145490884780884,
+        0.1489676833152771,
+        0.09166979789733887,
+        0.03877830505371094
+      ],
+      "generated_answer": "Based on security_policy.pdf, we found relevant information [1]. The context indicates that the key topics include: 'mandatory for accessing /api/v1/write and /api/v1/read. Health check requests on...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.6309297535714575,
+      "context_precision": 1.0,
+      "em": 0.0,
+      "f1": 0.0,
+      "faithfulness": 3.3,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 2.087116241455078,
+      "e2e_latency_ms": 0.024080276489257812
+    },
+    {
+      "id": "q14",
+      "question": "What consistency level options are supported in AetherDB's write API?",
+      "gold_file": "api_spec.html",
+      "gold_answer": "It supports consistency levels of 'one', 'quorum', and 'all'.",
+      "retrieved_files": [
+        "operations_manual.md",
+        "system_overview.md",
+        "operations_manual.md",
+        "system_overview.md"
+      ],
+      "retrieved_scores": [
+        0.1303117275238037,
+        0.1067352294921875,
+        0.08660256862640381,
+        0.08195376396179199
+      ],
+      "generated_answer": "I am sorry, but I cannot find relevant information in the provided document corpus to answer your question.",
+      "hit": false,
+      "rank": -1,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "em": 0.0,
+      "f1": 0.0,
+      "faithfulness": 1.9,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 2.022981643676758,
+      "e2e_latency_ms": 0.0019073486328125
+    },
+    {
+      "id": "q15",
+      "question": "What disk storage type is recommended to avoid latency spikes during compactions?",
+      "gold_file": "operations_manual.md",
+      "gold_answer": "High-performance NVMe SSDs are highly recommended.",
+      "retrieved_files": [
+        "operations_manual.md",
+        "system_overview.md",
+        "operations_manual.md",
+        "operations_manual.md"
+      ],
+      "retrieved_scores": [
+        0.2684624195098877,
+        0.2598278522491455,
+        0.2108185887336731,
+        0.11785125732421875
+      ],
+      "generated_answer": "Based on operations_manual.md, we found relevant information [1]. The context indicates that the key topics include: '# AetherDB Operations Manual ## Cluster Requirements & Scaling To...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.9306765580733931,
+      "context_precision": 0.8055555555555555,
+      "em": 0.0,
+      "f1": 0.0,
+      "faithfulness": 2.8,
+      "relevance": 1.4,
+      "retrieval_latency_ms": 2.2690296173095703,
+      "e2e_latency_ms": 0.0209808349609375
+    },
+    {
+      "id": "q16",
+      "question": "How do you scale out a cluster by adding a node?",
+      "gold_file": "operations_manual.md",
+      "gold_answer": "Set the seed_nodes in aether.conf to point to the active seed nodes and start the node service.",
+      "retrieved_files": [
+        "system_overview.md",
+        "operations_manual.md",
+        "system_overview.md",
+        "api_spec.html"
+      ],
+      "retrieved_scores": [
+        0.283189594745636,
+        0.25476229190826416,
+        0.12481725215911865,
+        0.10345196723937988
+      ],
+      "generated_answer": "Based on system_overview.md, we found relevant information [1]. The context indicates that the key topics include: '# AetherDB: High-Performance Distributed Storage System ## System Overview AetherDB...'",
+      "hit": true,
+      "rank": 2,
+      "ndcg": 0.6309297535714575,
+      "context_precision": 0.5,
+      "em": 0.0,
+      "f1": 0.048780487804878044,
+      "faithfulness": 2.9,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 2.6760101318359375,
+      "e2e_latency_ms": 0.024080276489257812
+    },
+    {
+      "id": "q17",
+      "question": "Are backup operations online or offline in AetherDB?",
+      "gold_file": "operations_manual.md",
+      "gold_answer": "Backup operations are fully online and do not block write operations.",
+      "retrieved_files": [
+        "operations_manual.md",
+        "operations_manual.md",
+        "system_overview.md",
+        "operations_manual.md"
+      ],
+      "retrieved_scores": [
+        0.2904738187789917,
+        0.16439902782440186,
+        0.1591113805770874,
+        0.1456928849220276
+      ],
+      "generated_answer": "Based on operations_manual.md, we found relevant information [1]. The context indicates that the key topics include: '## Backing Up Data Backup operations are fully online and...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 2.0616063116448506,
+      "context_precision": 0.9166666666666666,
+      "em": 0.0,
+      "f1": 0.3333333333333333,
+      "faithfulness": 2.8,
+      "relevance": 3.0,
+      "retrieval_latency_ms": 2.2711753845214844,
+      "e2e_latency_ms": 0.0209808349609375
+    },
+    {
+      "id": "q18",
+      "question": "Where are backups stored by running the admin backup command?",
+      "gold_file": "operations_manual.md",
+      "gold_answer": "They are copied to the path specified by the --destination flag, e.g. /mnt/backup.",
+      "retrieved_files": [
+        "operations_manual.md",
+        "operations_manual.md",
+        "operations_manual.md",
+        "security_policy.pdf"
+      ],
+      "retrieved_scores": [
+        0.2886751890182495,
+        0.21718621253967285,
+        0.12909948825836182,
+        0.11180341243743896
+      ],
+      "generated_answer": "Based on operations_manual.md, we found relevant information [1]. The context indicates that the key topics include: '## Backing Up Data Backup operations are fully online and...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 2.1309297535714578,
+      "context_precision": 1.0,
+      "em": 0.0,
+      "f1": 0.10526315789473685,
+      "faithfulness": 3.2,
+      "relevance": 1.5,
+      "retrieval_latency_ms": 2.1169185638427734,
+      "e2e_latency_ms": 0.02002716064453125
+    },
+    {
+      "id": "q19",
+      "question": "What encryption algorithm is supported for data at rest in AetherDB?",
+      "gold_file": "security_policy.pdf",
+      "gold_answer": "AES-256 block encryption is supported.",
+      "retrieved_files": [
+        "security_policy.pdf",
+        "operations_manual.md",
+        "api_spec.html",
+        "system_overview.md"
+      ],
+      "retrieved_scores": [
+        0.33850163221359253,
+        0.20707887411117554,
+        0.1546720266342163,
+        0.13193976879119873
+      ],
+      "generated_answer": "Based on security_policy.pdf, we found relevant information [1]. The context indicates that the key topics include: 'mandatory for accessing /api/v1/write and /api/v1/read. Health check requests on...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "em": 0.0,
+      "f1": 0.0,
+      "faithfulness": 3.3,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 2.2537708282470703,
+      "e2e_latency_ms": 0.022172927856445312
+    },
+    {
+      "id": "q20",
+      "question": "Does AetherDB support external Key Management Services?",
+      "gold_file": "security_policy.pdf",
+      "gold_answer": "Yes, AetherDB supports managing encryption keys using an external Key Management Service (KMS).",
+      "retrieved_files": [
+        "security_policy.pdf",
+        "api_spec.html",
+        "system_overview.md",
+        "security_policy.pdf"
+      ],
+      "retrieved_scores": [
+        0.4008917808532715,
+        0.1833396553993225,
+        0.16539525985717773,
+        0.14896774291992188
+      ],
+      "generated_answer": "Based on security_policy.pdf, we found relevant information [1]. The context indicates that the key topics include: 'managed using an external Key Management Service (KMS)....'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.4306765580733931,
+      "context_precision": 0.75,
+      "em": 0.0,
+      "f1": 0.3783783783783784,
+      "faithfulness": 2.8,
+      "relevance": 3.0,
+      "retrieval_latency_ms": 2.176046371459961,
+      "e2e_latency_ms": 0.016689300537109375
+    },
+    {
+      "id": "q21",
+      "question": "What is the minimum CPU core requirement for AetherDB?",
+      "gold_file": "operations_manual.md",
+      "gold_answer": "The minimum requirement is 4 Cores.",
+      "retrieved_files": [
+        "operations_manual.md",
+        "system_overview.md",
+        "operations_manual.md",
+        "security_policy.pdf"
+      ],
+      "retrieved_scores": [
+        0.2747212052345276,
+        0.20156925916671753,
+        0.18257415294647217,
+        0.1701035499572754
+      ],
+      "generated_answer": "Based on operations_manual.md, we found relevant information [1]. The context indicates that the key topics include: '## Troubleshooting Port Conflicts If port **8080** is already in...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.5,
+      "context_precision": 0.8333333333333333,
+      "em": 0.0,
+      "f1": 0.12903225806451613,
+      "faithfulness": 2.9,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 2.178192138671875,
+      "e2e_latency_ms": 0.02193450927734375
+    },
+    {
+      "id": "q22",
+      "question": "Which endpoint is used to write key-value pairs?",
+      "gold_file": "api_spec.html",
+      "gold_answer": "The endpoint is POST /api/v1/write.",
+      "retrieved_files": [
+        "system_overview.md",
+        "operations_manual.md",
+        "operations_manual.md",
+        "system_overview.md"
+      ],
+      "retrieved_scores": [
+        0.23866701126098633,
+        0.19364923238754272,
+        0.1804221272468567,
+        0.12216943502426147
+      ],
+      "generated_answer": "Based on system_overview.md, we found relevant information [1]. The context indicates that the key topics include: '## Architecture & Storage Engine Under the hood, AetherDB relies...'",
+      "hit": false,
+      "rank": -1,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "em": 0.0,
+      "f1": 0.06896551724137931,
+      "faithfulness": 2.8,
+      "relevance": 1.0,
+      "retrieval_latency_ms": 2.0570755004882812,
+      "e2e_latency_ms": 0.022172927856445312
+    },
+    {
+      "id": "q23",
+      "question": "What port conflict troubleshooting step is recommended if port 8080 is in use?",
+      "gold_file": "operations_manual.md",
+      "gold_answer": "You can edit the config file to change the http_port parameter.",
+      "retrieved_files": [
+        "operations_manual.md",
+        "security_policy.pdf",
+        "operations_manual.md",
+        "operations_manual.md"
+      ],
+      "retrieved_scores": [
+        0.3331482410430908,
+        0.16728413105010986,
+        0.13284224271774292,
+        0.09901469945907593
+      ],
+      "generated_answer": "Based on operations_manual.md, we found relevant information [1]. The context indicates that the key topics include: '## Troubleshooting Port Conflicts If port **8080** is already in...'",
+      "hit": true,
+      "rank": 1,
+      "ndcg": 1.9306765580733931,
+      "context_precision": 0.8055555555555555,
+      "em": 0.0,
+      "f1": 0.05555555555555555,
+      "faithfulness": 3.1,
+      "relevance": 3.0,
+      "retrieval_latency_ms": 2.064228057861328,
+      "e2e_latency_ms": 0.02193450927734375
+    },
+    {
+      "id": "q24",
+      "question": "What is the gossip port used for?",
+      "gold_file": "system_overview.md",
+      "gold_answer": "Port 7070 is used for the gossip membership protocol.",
+      "retrieved_files": [
+        "operations_manual.md",
+        "operations_manual.md",
+        "operations_manual.md",
+        "api_spec.html"
+      ],
+      "retrieved_scores": [
+        0.36342185735702515,
+        0.20701968669891357,
+        0.19287919998168945,
+        0.17622673511505127
+      ],
+      "generated_answer": "Based on operations_manual.md, we found relevant information [1]. The context indicates that the key topics include: '## Troubleshooting Port Conflicts If port **8080** is already in...'",
+      "hit": false,
+      "rank": -1,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "em": 0.0,
+      "f1": 0.1764705882352941,
+      "faithfulness": 3.1,
+      "relevance": 2.3,
+      "retrieval_latency_ms": 2.029895782470703,
+      "e2e_latency_ms": 0.019073486328125
+    }
+  ]
+}
