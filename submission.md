@@ -6,7 +6,7 @@
 | **Full name** | [ Santosh Shah ] |
 | **Email** | [ santoshshah@example.com ] |
 | **Date submitted** | [ 2026-06-30 ] |
-| **Repository link** | [ https://github.com/santoshshah/rag-eval-takehome ] |
+| **Repository link** | [ https://github.com/Santosh-Shahh/Rag-Eval-Takehome ] |
 | **Total time spent** | [ ~8 hours across 2 sessions ] |
 | **Problem 1 — vector store chosen** | **LanceDB** (embedded, serverless vector store) |
 | **Problem 2 — judge model / generator model** | **judge**: `gemini-1.5-flash` · **generator**: `gemini-1.5-flash` |
