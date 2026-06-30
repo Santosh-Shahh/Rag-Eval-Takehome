@@ -12,8 +12,8 @@ For the full detailed grading candidate details and grading template, see **[sub
 Ensure you have Python 3.11+ installed.
 ```bash
 # Clone the repository
-git clone https://github.com/Santosh-Shahh/Rag-Eval-Takehome.git
-cd Rag-Eval-Takehome
+git clone https://github.com/Santosh-Shahh/Rag-Eval.git
+cd Rag-Eval
 
 # Initialize and activate virtual environment
 python3 -m venv venv
